@@ -30,5 +30,12 @@
         Application Scope: <span th:text="${application.application}"></span> <br>
     </div>
 </section>
+<section>
+    <h2>Thymeleaf Links</h2>
+    <!-- redirect to demo page without parameter -->
+    <a th:href="@{~/demo}">Visit Demo Page</a> <br />
+    <!-- redirect to demo page with parameter -->
+    <a th:href="@{~/demo(id=1, name=eric)}">Visit Demo page With Parameter</a>
+</section>
 </body>
 </html>
