@@ -7,5 +7,13 @@
 <body>
     <img src="images/service.jpg" alt="Service Image"/>
     <p>Hello World!</p>
+
+    <section>
+        <h2>File Upload Component</h2>
+        <form action="/uploadFile" method="post" enctype="multipart/form-data">
+            Select file <input type="file" name="attach" multiple="true"/>
+            <input type="submit" value="Upload">
+        </form>
+    </section>
 </body>
 </html>
