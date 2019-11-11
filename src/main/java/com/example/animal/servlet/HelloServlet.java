@@ -16,16 +16,4 @@ public class HelloServlet extends HttpServlet {
         System.out.println("Hello Servlet Do get Method fires.");
     }
 
-    @WebFilter(filterName="helloFilter", urlPatterns="/helloServlet")
-    public class HelloFilter implements Filter {
-
-        @Override
-        public void doFilter(ServletRequest servletRequest,
-                             ServletResponse servletResponse, FilterChain filterChain)
-                throws IOException, ServletException {
-            System.out.println("Executing doFilter method");
-            filterChain.doFilter(servletRequest, servletResponse);
-            System.out.println("Done executing doFilter method");
-        }
-    }
 }
