@@ -22,5 +22,13 @@
         </table>
     </div>
 </section>
+<section>
+    <div>
+        <h3>Thymeleaf Scopes</h3>
+        Request Scope: <span th:text="${#httpServletRequest.getAttribute('request')}"></span> <br>
+        Session Scope: <span th:text="${session.session}"></span> <br>
+        Application Scope: <span th:text="${application.application}"></span> <br>
+    </div>
+</section>
 </body>
 </html>
