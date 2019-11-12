@@ -16,6 +16,9 @@
         <span th:errors="${webUser.password}" style="color:red"></span><br>
         <label for="grade">Grade: </label>
         <input id="grade" type="text" name="grade"><br>
+        <label for="email">Email: </label>
+        <input id="email" type="text" name="email">
+        <span th:errors="${webUser.email}" style="color:red"></span><br>
         <input type="submit" value="Add">
     </form>
 </body>
